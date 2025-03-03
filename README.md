@@ -1,10 +1,11 @@
-# Enhanced OoD Detection through Cross-Modal Alignment of Multimodal Representations
+# [CVPR2025]Enhanced OoD Detection through Cross-Modal Alignment of Multimodal Representations
 
-Official PyTorch implementation of the CVPR 2025 paper:
+This repository is the official implementation of [CMA](https://github.com/ma-kjh/CMA/tree/main)
 
-[Enhanced OoD Detection through Cross-Modal Alignment of Multimodal Representations](https://github.com/ma-kjh/CMA/) (temporary)
+> Enhanced OoD Detection through Cross-Modal Alignment of Multimodal Representations \
+> [Jeonghyeon Kim](https://scholar.google.co.kr/citations?user=u6DjYLsAAAAJ&hl=ko), [Sangheum Hwang](https://scholar.google.co.kr/citations?user=QtI8XmgAAAAJ&hl=ko)
 
-Jeonghyeon Kim and Sangheum Hwang
+\[[arXiv Paper]()\]
 
 <p align="center">
      <img alt="main" src="https://github.com/ma-kjh/CMA/blob/main/main.jpg" width="50%"/>
