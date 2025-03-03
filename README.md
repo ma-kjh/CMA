@@ -1,5 +1,7 @@
 # Enhanced OoD Detection through Cross-Modal Alignment of Multimodal Representations
 
+CREDITS: Our code is heavily based on [CLIP](https://github.com/openai/CLIP), [FLYP](https://github.com/locuslab/FLYP?tab=readme-ov-file), [MCM](https://github.com/deeplearning-wisc/MCM), [NegLabel](https://github.com/XueJiang16/NegLabel). We thank the authors for open sourcing their code.
+
 Official PyTorch implementation of the CVPR 2025 paper:
 
 Enhanced OoD Detection through Cross-Modal Alignment of Multimodal Representations
@@ -61,7 +63,7 @@ The extracted 10,000 texts are located in `./NegLabel/neg_text_10000.npy`
      
 ## Multi-modal Fine-tuning
 
-### Fine-tune Like Your Pretrain
+### [FLYP: Finetune Like You Pretrain](https://github.com/locuslab/FLYP) 
 
 ```python
 image_embeddings, text_embeddings, scale = model(images, texts)
