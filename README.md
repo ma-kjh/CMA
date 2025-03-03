@@ -1,13 +1,12 @@
 # Enhanced OoD Detection through Cross-Modal Alignment of Multimodal Representations
 
-CREDITS: Our code is heavily based on [CLIP](https://github.com/openai/CLIP), [FLYP](https://github.com/locuslab/FLYP?tab=readme-ov-file), [MCM](https://github.com/deeplearning-wisc/MCM) and [NegLabel](https://github.com/XueJiang16/NegLabel). \
-We thank the authors for open sourcing their code.
-
 Official PyTorch implementation of the CVPR 2025 paper:
 
-Enhanced OoD Detection through Cross-Modal Alignment of Multimodal Representations
+[Enhanced OoD Detection through Cross-Modal Alignment of Multimodal Representations](https://github.com/ma-kjh/CMA/) (temporary)
 
 Jeonghyeon Kim and Sangheum Hwang
+
+<iframe src="https://github.com/ma-kjh/CMA/raw/main.pdf" width="100%" height="600px"></iframe>
 
 Abstract: _Prior research on out-of-distribution detection (OoDD) has primarily focused on single-modality models. Recently, with the advent of large-scale pretrained vision-language models such as CLIP, OoDD methods utilizing such multi-modal representations through zero-shot and prompt learning strategies have emerged. However, these methods typically involve either freezing the pretrained weights or only partially tuning them, which can be suboptimal for downstream datasets. In this paper, we highlight that multi-modal fine-tuning (MMFT) can achieve notable OoDD performance. Despite some recent works demonstrating the impact of fine-tuning methods for OoDD, there remains significant potential for performance improvement. We investigate the limitation of na\"ive fine-tuning methods, examining why they fail to fully leverage the pretrained knowledge. Our empirical analysis suggests that this issue could stem from the modality gap within in-distribution (ID) embeddings. To address this, we propose a training objective that enhances cross-modal alignment by regularizing the distances between image and text embeddings of ID data. This adjustment helps in better utilizing pretrained textual information by aligning similar semantics from different modalities (i.e., text and image) more closely in the hyperspherical representation space. We theoretically demonstrate that the proposed regularization corresponds to the maximum likelihood estimation of an energy-based model on a hypersphere. Utilizing ImageNet-1k OoD benchmark datasets, we show that our method, combined with post-hoc OoDD approaches leveraging pretrained knowledge (e.g., NegLabel), significantly outperforms existing methods, achieving state-of-the-art OoDD performance and leading ID accuracy._
 
@@ -105,3 +104,12 @@ You can download our model's checkpoint using the provided [link](https://drive.
 ```python
 python inference.py --ckpt ./ckpt/CMA-ckpt.pt
 ```
+
+## Citation
+
+An update is coming soon.
+
+## Thanks to
+
+Our code is heavily based on [CLIP](https://github.com/openai/CLIP), [FLYP](https://github.com/locuslab/FLYP?tab=readme-ov-file), [MCM](https://github.com/deeplearning-wisc/MCM) and [NegLabel](https://github.com/XueJiang16/NegLabel). \
+We thank the authors for open sourcing their code.
