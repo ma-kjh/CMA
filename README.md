@@ -61,7 +61,7 @@ Our approach employs the same negmining method as described in [NegLabel](https:
 The extracted 10,000 texts are located in `./NegLabel/neg_text_10000.npy` (Our default prompt is "The nice")
      
 ## Multi-modal Fine-tuning
-DDP code will be released soon. Please stay tuned!
+DDP code will be released soon.
 
 ### [FLYP: Finetune Like You Pretrain](https://github.com/locuslab/FLYP) 
 
