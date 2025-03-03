@@ -114,5 +114,10 @@ An update is coming soon.
 
 ## Thanks to
 
-Our code is heavily based on [CLIP](https://github.com/openai/CLIP), [FLYP](https://github.com/locuslab/FLYP?tab=readme-ov-file), [MCM](https://github.com/deeplearning-wisc/MCM) and [NegLabel](https://github.com/XueJiang16/NegLabel). \
+Our code is heavily based on 
+- CLIP : https://github.com/openai/CLIP
+- FLYP :https://github.com/locuslab/FLYP
+- MCM : https://github.com/deeplearning-wisc/MCM
+- NegLabel : https://github.com/XueJiang16/NegLabel
+  
 We thank the authors for open sourcing their code.
