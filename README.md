@@ -10,8 +10,8 @@ Enhanced OoD Detection through Cross-Modal Alignment of Multimodal Representatio
 Jeonghyeon Kim and Sangheum Hwang
 
 Abstract: _Prior research on out-of-distribution detection (OoDD) has primarily focused on single-modality models. Recently, with the advent of large-scale pretrained vision-language models such as CLIP, OoDD methods utilizing such multi-modal representations through zero-shot and prompt learning strategies have emerged. However, these methods typically involve either freezing the pretrained weights or only partially tuning them, which can be suboptimal for downstream datasets. In this paper, we highlight that multi-modal fine-tuning (MMFT) can achieve notable OoDD performance. Despite some recent works demonstrating the impact of fine-tuning methods for OoDD, there remains significant potential for performance improvement. We investigate the limitation of na\"ive fine-tuning methods, examining why they fail to fully leverage the pretrained knowledge. Our empirical analysis suggests that this issue could stem from the modality gap within in-distribution (ID) embeddings. To address this, we propose a training objective that enhances cross-modal alignment by regularizing the distances between image and text embeddings of ID data. This adjustment helps in better utilizing pretrained textual information by aligning similar semantics from different modalities (i.e., text and image) more closely in the hyperspherical representation space. We theoretically demonstrate that the proposed regularization corresponds to the maximum likelihood estimation of an energy-based model on a hypersphere. Utilizing ImageNet-1k OoD benchmark datasets, we show that our method, combined with post-hoc OoDD approaches leveraging pretrained knowledge (e.g., NegLabel), significantly outperforms existing methods, achieving state-of-the-art OoDD performance and leading ID accuracy._
-## 
-Requirements
+
+## Requirements
 - python == 3.9.18
 - torch == 1.12.0+cu116
 - torchvision == 0.13.0+cu116
@@ -19,7 +19,6 @@ Requirements
 - scikit-learn == 1.4.2
 
 ## Dataset Preparation
-
 The guidelines are provided in [MOS](https://github.com/deeplearning-wisc/large_scale_ood?tab=readme-ov-file) and [OpenOOD](https://github.com/Jingkang50/OpenOOD) GitHub repositories to download the datasets directly for our experiments.
 
 ### In-distribution datasets
@@ -35,18 +34,15 @@ For fine-tuning and evaluation [ImageNet-1k](https://image-net.org/challenges/LS
 ```
 
 ### Out-of-distribution Datasets
-
 Following MOS and OpenOOD, we use the following OoD datasets:
 
 **MOS:**
-
 - iNaturalist
 - SUN
 - Places
 - Textures
 
 **OpenOOD v1.5:**
-
 - SSB-hard
 - NINCO
 - iNaturalist
@@ -55,7 +51,6 @@ Following MOS and OpenOOD, we use the following OoD datasets:
 
 
 ## NegLabels
-
 We utilize negative labels from the WordNet database, located in `./NegLabel/txtfiles`.
 
 Our approach employs the same negmining method as described in [NegLabel](https://github.com/XueJiang16/NegLabel/tree/main). 
@@ -63,7 +58,6 @@ Our approach employs the same negmining method as described in [NegLabel](https:
 The extracted 10,000 texts are located in `./NegLabel/neg_text_10000.npy`
      
 ## Multi-modal Fine-tuning
-
 DDP code will be released soon. Please stay tuned!
 
 ### [FLYP: Finetune Like You Pretrain](https://github.com/locuslab/FLYP) 
@@ -102,7 +96,6 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 python train.py --is-train --prompt-name <prompt> -
 ```
 
 ## Inference
-
 This inference takes approximately 1,000 seconds.
 
 If you want fast inference, you can precompute and store the features beforehand.
