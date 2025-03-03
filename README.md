@@ -1,8 +1,8 @@
-# [CVPR2025]Enhanced OoD Detection through Cross-Modal Alignment of Multimodal Representations
+# [CVPR2025]Enhanced OoD Detection through Cross-Modal Alignment of Multi-modal Representations
 
 This repository is the official implementation of [CMA](https://github.com/ma-kjh/CMA/tree/main)
 
-> **Enhanced OoD Detection through Cross-Modal Alignment of Multimodal Representations** \
+> **Enhanced OoD Detection through Cross-Modal Alignment of Multi-modal Representations** \
 > [Jeonghyeon Kim](https://scholar.google.co.kr/citations?user=u6DjYLsAAAAJ&hl=ko), [Sangheum Hwang](https://scholar.google.co.kr/citations?user=QtI8XmgAAAAJ&hl=ko)
 
 \[[arXiv Paper]()\]
