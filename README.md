@@ -111,7 +111,7 @@ python inference.py --ckpt ./ckpt/CMA-ckpt.pt
 
 ## Citation
 
-An update is coming soon.
+coming soon.
 
 ## Thanks to
 
