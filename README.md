@@ -115,7 +115,7 @@ An update is coming soon.
 
 ## Thanks to
 
-Our code is heavily based on 
+Our code is based on 
 - CLIP : https://github.com/openai/CLIP
 - FLYP :https://github.com/locuslab/FLYP
 - MCM : https://github.com/deeplearning-wisc/MCM
