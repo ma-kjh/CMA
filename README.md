@@ -101,6 +101,9 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 python train.py --is-train --prompt-name <prompt> -
 
 ## Inference
 
+If you want fast inference, you can precompute and store the features beforehand.
+
+You can download our model's checkpoint using the provided [link](https://drive.google.com/drive/folders/1k6trOT-zeVsT9WfbvavMPh2wwNBAFReK?usp=share_link).
 
 ```python
 python inference.py --ckpt ./ckpt/CMA-ckpt.pt
