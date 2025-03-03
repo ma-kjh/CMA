@@ -55,7 +55,7 @@ We utilize negative labels from the WordNet database, located in `./NegLabel/txt
 
 Our approach employs the same negmining method as described in [NegLabel](https://github.com/XueJiang16/NegLabel/tree/main). 
 
-The extracted 10,000 texts are located in `./NegLabel/neg_text_10000.npy`
+The extracted 10,000 texts are located in `./NegLabel/neg_text_10000.npy` (Our default prompt is "The nice")
      
 ## Multi-modal Fine-tuning
 DDP code will be released soon. Please stay tuned!
